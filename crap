@@ -21,3 +21,4 @@ if [[ $1 == "install" ]]; then
 		curl -o ~/.crap_messages.txt https://raw.githubusercontent.com/obiwanakin/crappy-commit/master/messages.txt
 	fi
 fi
+exit

@@ -1,4 +1,10 @@
 # crappy-commit
+Basically, this program will run
+    git add -A
+    git commit -m $CRAPPY_MESSAGE
+    git push
+Obviously, it will replace $CRAPPY_MESSAGE with  an actual crappy message.
+
 
 # INSTALLING
 ----------------------------------------
