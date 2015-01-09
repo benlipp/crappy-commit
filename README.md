@@ -24,7 +24,7 @@ If you're a curl-er:
 Simply run the command 'crap' in a git repo to add all files and push with a crappy commit message.
 
 
-Or, you can run 'crap add <INSERT MESSAGE HERE>' to add custom messages to your message list.
+Or, you can run 'crap add $INSERT\_MESSAGE\_HERE' to add custom messages to your message list.
 
 
 'crap install' downloads a fresh copy of the message list.
