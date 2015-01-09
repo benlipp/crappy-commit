@@ -17,7 +17,7 @@ If you like wget:
 
 If you're a curl-er:
 
-    bash <(curl -s https://raw.githubusercontent.com/obiwanakin/crappy-commit/master/crapinstall.sh)
+    curl -s https://raw.githubusercontent.com/obiwanakin/crappy-commit/master/crapinstall.sh | bash
 
 
 # HELP
