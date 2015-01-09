@@ -5,7 +5,7 @@ msg_loc=~/.crap_messages.txt
 
 if [[ $1 == "" ]]; then
 	msg=$(head -$((${RANDOM} % `wc -l < $msg_loc` + 1)) $msg_loc | tail -1)
-	git add -A && git commit -m "$msg" && git push
+	git add -A && git commit -m "$msg" && git push -f
 fi
 
 if [[ $1 == "add" ]]; then
@@ -16,9 +16,9 @@ fi
 
 if [[ $1 == "reset" ]]; then
 	if [[hash curl 2>/dev/null]]; then
-		wget -O ~/.crap_messages.txt https://raw.githubusercontent.com/obiwanakin/crappy-commit/master/messages.txt
+		wget -O ~/.crap_messages.txt https://raw.githubusercontent.com/jonnolen/hemorrhoid-commit/master/messages.txt
 	else
-		curl -o ~/.crap_messages.txt https://raw.githubusercontent.com/obiwanakin/crappy-commit/master/messages.txt
+		curl -o ~/.crap_messages.txt https://raw.githubusercontent.com/jonnolen/hemorrhoid-commit/master/messages.txt
 	fi
 fi
 exit

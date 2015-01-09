@@ -6,7 +6,6 @@ Basically, this program will run:
     git commit -m $CRAPPY_MESSAGE
     git push
 
-
 Obviously, it will replace $CRAPPY_MESSAGE with  an actual crappy message.
 
 
@@ -22,7 +21,7 @@ If you're a curl-er:
 
 ## HELP
 Simply run the command `crap` in a git repo to add all files and push with a crappy commit message.
-
+If you are adventurous you can run `hemorrhoid` instead, which is just like `crap` except perhaps too forceful in its pushing.
 
 Or, you can run `crap add $INSERT\_MESSAGE\_HERE` to add custom messages to your message list.
 
