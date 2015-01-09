@@ -22,7 +22,7 @@ If you're a curl-er:
 
 ## HELP
 Simply run the command `crap` in a git repo to add all files and push with a crappy commit message.
-
+If you want to force a push, run `crap hemorrhoid`.
 
 Or, you can run `crap add $INSERT\_MESSAGE\_HERE` to add custom messages to your message list.
 
