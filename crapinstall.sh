@@ -7,4 +7,4 @@ else
     curl -o /usr/bin/local/crap https://raw.githubusercontent.com/obiwanakin/crappy-commit/master/crap
 	curl -o ~/.crap_messages.txt https://raw.githubusercontent.com/obiwanakin/crappy-commit/master/messages.txt
 fi
-echo ENJOY!
+exit
