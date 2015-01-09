@@ -27,5 +27,5 @@ Simply run the command 'crap' in a git repo to add all files and push with a cra
 Or, you can run 'crap add $INSERT\_MESSAGE\_HERE' to add custom messages to your message list.
 
 
-'crap install' downloads a fresh copy of the message list.
+'crap reset' downloads a fresh copy of the message list.
 
