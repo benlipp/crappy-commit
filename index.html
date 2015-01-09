@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Crappy-commit by obiwanakin</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Crappy-commit</h1>
+        <h2>runs git with a crappy commit message</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/obiwanakin/crappy-commit/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/obiwanakin/crappy-commit/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/obiwanakin/crappy-commit" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="crappy-commit" class="anchor" href="#crappy-commit" aria-hidden="true"><span class="octicon octicon-link"></span></a>crappy-commit</h1>
+
+<p>Basically, this program will run:</p>
+
+<pre><code>git add -A
+git commit -m $CRAPPY_MESSAGE
+git push
+</code></pre>
+
+<p>Obviously, it will replace $CRAPPY_MESSAGE with  an actual crappy message.</p>
+
+<h2>
+<a id="installing" class="anchor" href="#installing" aria-hidden="true"><span class="octicon octicon-link"></span></a>INSTALLING</h2>
+
+<p>If you like wget:</p>
+
+<pre><code>wget -O - https://raw.githubusercontent.com/obiwanakin/crappy-commit/master/crapinstall.sh | bash
+</code></pre>
+
+<p>If you're a curl-er:</p>
+
+<pre><code>curl -s https://raw.githubusercontent.com/obiwanakin/crappy-commit/master/crapinstall.sh | bash
+</code></pre>
+
+<h2>
+<a id="help" class="anchor" href="#help" aria-hidden="true"><span class="octicon octicon-link"></span></a>HELP</h2>
+
+<p>Simply run the command <code>crap</code> in a git repo to add all files and push with a crappy commit message.
+If you want to force a push, run <code>crap hemorrhoid</code>.</p>
+
+<p>Or, you can run <code>crap add $INSERT\_MESSAGE\_HERE</code> to add custom messages to your message list.</p>
+
+<p><code>crap reset</code> downloads a fresh copy of the message list.</p>
+
+<h2>
+<a id="web-api" class="anchor" href="#web-api" aria-hidden="true"><span class="octicon octicon-link"></span></a>WEB API</h2>
+
+<p>I'm planning to make an app to handle message adding, probably with node.</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
