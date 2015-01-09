@@ -15,7 +15,7 @@ if [[ $1 == "add" ]]; then
 fi
 
 if [[ $1 == "install" ]]; then
-	if hash curl 2>/dev/null; then
+	if [[hash curl 2>/dev/null]]; then
 		wget -O ~/.crap_messages.txt https://raw.githubusercontent.com/obiwanakin/crappy-commit/master/messages.txt
 	else
 		curl -o ~/.crap_messages.txt https://raw.githubusercontent.com/obiwanakin/crappy-commit/master/messages.txt
