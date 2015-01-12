@@ -19,11 +19,11 @@ if [[ $1 == "add" ]]; then
 	echo "$add_to_file added to file"
 fi
 
-if [[ $1 == "reset" ]]; then
+if [[ $1 == "update" ]]; then
 	if [[hash curl 2>/dev/null]]; then
-		wget -O ~/.crap_messages.txt https://raw.githubusercontent.com/obiwanakin/crappy-commit/master/messages.txt
+		wget -O ~/.crap_messages.txt https://crappy-commit-server.herokuapp.com/messages.txt
 	else
-		curl -o ~/.crap_messages.txt https://raw.githubusercontent.com/obiwanakin/crappy-commit/master/messages.txt
+		curl -o ~/.crap_messages.txt https://crappy-commit-server.herokuapp.com/messages.txt
 	fi
 fi
 exit

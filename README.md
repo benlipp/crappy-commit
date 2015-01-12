@@ -27,8 +27,8 @@ If you want to force a push, run `crap hemorrhoid`.
 Or, you can run `crap add $INSERT\_MESSAGE\_HERE` to add custom messages to your message list.
 
 
-`crap reset` downloads a fresh copy of the message list.
+`crap update` downloads a fresh copy of the message list, with all of the new updates submitted by users.
 
 ## WEB API
-I'm planning to make an app to handle message adding, probably with node.
-
+You can add your messages to the master list by using the Heroku app!
+https://crappy-commit-server.herokuapp.com
