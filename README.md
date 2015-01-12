@@ -27,7 +27,11 @@ If you want to force a push, run `crap hemorrhoid`.
 Or, you can run `crap add $INSERT_MESSAGE_HERE` to add custom messages to your message list.
 
 
-`crap update` downloads a fresh copy of the message list, with all of the new updates submitted by users.
+`crap update list` downloads a fresh copy of the message list, with all of the new updates submitted by users.
+
+`crap update full` will download the full message list and update the `crap` package.
+
+If you want to push to a specific branch, run `crap branch $LOCAL_NAME $REMOTE_NAME`. For example, `crap branch origin master`
 
 ## WEB API
 You can add your messages to the master list by using the Heroku app!

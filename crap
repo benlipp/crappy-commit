@@ -3,6 +3,10 @@
 # Copyright (C) 2015  Benjamin Lippincott
 msg_loc=~/.crap_messages.txt
 
+if [[ $1 == "branch" ]]; then
+	msg=$(head -$((${RANDOM} % `wc -l < $msg_loc` + 1)) $msg_loc | tail -1)
+	git add -A && git commit -m "$msg" && git push $2 $3
+
 if [[ $1 == "" ]]; then
 	msg=$(head -$((${RANDOM} % `wc -l < $msg_loc` + 1)) $msg_loc | tail -1)
 	git add -A && git commit -m "$msg" && git push
@@ -20,10 +24,19 @@ if [[ $1 == "add" ]]; then
 fi
 
 if [[ $1 == "update" ]]; then
-	if [[hash curl 2>/dev/null]]; then
-		wget -O ~/.crap_messages.txt https://crappy-commit-server.herokuapp.com/messages.txt
-	else
-		curl -o ~/.crap_messages.txt https://crappy-commit-server.herokuapp.com/messages.txt
+	if [[ $2 == "list" ]]; then
+		if [[hash curl 2>/dev/null]]; then
+			wget -O ~/.crap_messages.txt https://crappy-commit-server.herokuapp.com/messages.txt
+		else
+			curl -o ~/.crap_messages.txt https://crappy-commit-server.herokuapp.com/messages.txt
+		fi
+	fi
+	if [[ $2 == "full" ]]; then
+		if [[hash curl 2>/dev/null]]; then
+			wget -O - https://raw.githubusercontent.com/obiwanakin/crappy-commit/master/crapinstall.sh | bash
+		else
+			curl -s https://raw.githubusercontent.com/obiwanakin/crappy-commit/master/crapinstall.sh | bash
+		fi
 	fi
 fi
 exit
