@@ -6,6 +6,7 @@ msg_loc=~/.crap_messages.txt
 if [[ $1 == "branch" ]]; then
 	msg=$(head -$((${RANDOM} % `wc -l < $msg_loc` + 1)) $msg_loc | tail -1)
 	git add -A && git commit -m "$msg" && git push $2 $3
+fi
 
 if [[ $1 == "" ]]; then
 	msg=$(head -$((${RANDOM} % `wc -l < $msg_loc` + 1)) $msg_loc | tail -1)
