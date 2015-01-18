@@ -21,7 +21,7 @@ fi
 if [[ $1 == "add" ]]; then
 	add_to_file=$2
 	echo $add_to_file >> $msg_loc
-	echo "$add_to_file added to file"
+	echo "$add_to_file shuddered to file"
 fi
 
 if [[ $1 == "update" ]]; then
